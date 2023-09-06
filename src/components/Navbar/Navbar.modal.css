@@ -1,0 +1,30 @@
+.navLi{
+    height: 24px;
+    overflow: hidden;
+}
+.navLi a{
+    display: block;
+    transition: 1s ease;
+
+}
+.navLi a::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #FA4A0C;
+}
+.navLi a:hover{
+       transform: translateY(-60%) !important;  
+}
+.navLi:nth-child(1) a::after{
+    content: "Home";
+}
+.navLi:nth-child(2) a::after{
+    content: "Product";
+}
+.navLi:nth-child(3) a::after{
+    content: "Faq";
+
+}
+.navLi:nth-child(4) a::after{
+    content: "Contact";
+}
